@@ -34,4 +34,14 @@ public String getGenre() {
 public int getPublicationYear() {
     return publicationYear;
 }
+ @Override
+public String toString() {
+    return "ISBN: " + isbn +
+            "\nTitle: " + title +
+            "\nAuthor: " + author +
+            "\nGenre: " + genre +
+            "\nPublication Year: " + publicationYear;
+}
+
+  
 }
