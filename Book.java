@@ -6,5 +6,4 @@ public class Book {
   private String genre;
   private int publicationYear;
 
-  
 }
