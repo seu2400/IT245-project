@@ -13,17 +13,15 @@ public class BinarySearch {
 
         if (comparison == 0) {
             return books[middle];
+        }
             if (comparison < 0) {
             left = middle + 1;
         } else {
             right = middle - 1;
-}
+    }
 }
 
         return null;
-}
-
-return null;
     }
 
 }
