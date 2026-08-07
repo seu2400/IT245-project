@@ -52,7 +52,7 @@ long binaryTime = binaryEnd - binaryStart;
 if (hashTime < binaryTime) {
     System.out.println("HashMap search was faster in this test.");
 } else if (binaryTime < hashTime) {
-    System.out.println("Binary Search was fater in this test.");
+    System.out.println("Binary Search was faster in this test.");
 } else {
     System.out.println("Both searches took the same time in this test.");
 }
