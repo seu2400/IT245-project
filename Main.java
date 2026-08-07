@@ -29,6 +29,13 @@ long binaryEnd = System.nanoTime();
 System.out.println("Binary Search Result:");
 System.out.println(binaryResult);
 System.out.println("Binary Search Time: " + (binaryEnd - binaryStart) + " ns");
+        String missingIsbn = "9999";
+
+Book missingHashResult = hashSearch.searchByIsbn(missingIsbn);
+Book missingBinaryResult = BinarySearch.binarySearch(books, missingIsbn);
+
+System.out.println("Missing ISBN - HashMap Result: " + missingHashResult);
+System.out.println("Missing ISBN - Binary Search Result: " + missingBinaryResult);
     }
 
 }
