@@ -20,10 +20,15 @@ long hashEnd = System.nanoTime();
 System.out.println("HashMap Time: " + (hashEnd - hashStart) + " ns");
 System.out.println("HashMap Search Result:");
 System.out.println(hashResult);
-        Book binaryResult = BinarySearch.binarySearch(books, targetIsbn);
+       long binaryStart = System.nanoTime();
+
+Book binaryResult = BinarySearch.binarySearch(books, targetIsbn);
+
+long binaryEnd = System.nanoTime();
 
 System.out.println("Binary Search Result:");
 System.out.println(binaryResult);
+System.out.println("Binary Search Time: " + (binaryEnd - binaryStart) + " ns");
     }
 
 }
