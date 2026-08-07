@@ -8,7 +8,11 @@ public class Main {
     new Book("1004", "Database Systems", "Mona Ahmed", "Technology", 2022),
     new Book("1005", "Software Engineering", "Omar Hassan", "Engineering", 2023)
 };
+HashSearch hashSearch = new HashSearch();
 
+for (Book book : books) {
+    hashSearch.addBook(book);
+}
     }
 
 }
