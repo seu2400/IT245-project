@@ -36,6 +36,16 @@ Book missingBinaryResult = BinarySearch.binarySearch(books, missingIsbn);
 
 System.out.println("Missing ISBN - HashMap Result: " + missingHashResult);
 System.out.println("Missing ISBN - Binary Search Result: " + missingBinaryResult);
+        Runtime runtime = Runtime.getRuntime();
+
+long memoryBefore = runtime.totalMemory() - runtime.freeMemory();
+
+hashSearch.searchByIsbn(targetIsbn);
+BinarySearch.binarySearch(books, targetIsbn);
+
+long memoryAfter = runtime.totalMemory() - runtime.freeMemory();
+
+System.out.println("Approximate Memory Used: " + (memoryAfter - memoryBefore) + " bytes");
     }
 
 }
