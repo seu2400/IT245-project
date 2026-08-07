@@ -46,6 +46,16 @@ BinarySearch.binarySearch(books, targetIsbn);
 long memoryAfter = runtime.totalMemory() - runtime.freeMemory();
 
 System.out.println("Approximate Memory Used: " + (memoryAfter - memoryBefore) + " bytes");
+        long hashTime = hashEnd - hashStart;
+long binaryTime = binaryEnd - binaryStart;
+
+if (hashTime < binaryTime) {
+    System.out.println("HashMap search was faster in this test.");
+} else if (binaryTime < hashTime) {
+    System.out.println("Binary Search was fater in this test.");
+} else {
+    System.out.println("Both searches took the same time in this test.");
+}
     }
 
 }
