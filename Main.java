@@ -19,6 +19,10 @@ Book hashResult = hashSearch.searchByIsbn(targetIsbn);
 
 System.out.println("HashMap Search Result:");
 System.out.println(hashResult);
+        Book binaryResult = BinarySearch.binarySearch(books, targetIsbn);
+
+System.out.println("Binary Search Result:");
+System.out.println(binaryResult);
     }
 
 }
