@@ -1,6 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
+        Book[] books = {
+    new Book("1001", "Java Basics", "John Smith", "Programming", 2020),
+    new Book("1002", "Data Structures", "Sara Ali", "Computer Science", 2021),
+    new Book("1003", "Algorithms", "David Lee", "Computer Science", 2019),
+    new Book("1004", "Database Systems", "Mona Ahmed", "Technology", 2022),
+    new Book("1005", "Software Engineering", "Omar Hassan", "Engineering", 2023)
+};
 
     }
 
