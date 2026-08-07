@@ -14,9 +14,10 @@ for (Book book : books) {
     hashSearch.addBook(book);
 }
         String targetIsbn = "1003";
-
+long hashStart = System.nanoTime();
 Book hashResult = hashSearch.searchByIsbn(targetIsbn);
-
+long hashEnd = System.nanoTime();
+System.out.println("HashMap Time: " + (hashEnd - hashStart) + " ns");
 System.out.println("HashMap Search Result:");
 System.out.println(hashResult);
         Book binaryResult = BinarySearch.binarySearch(books, targetIsbn);
