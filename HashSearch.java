@@ -7,4 +7,7 @@ private HashMap<String, Book> booksMap;
  public void addBook(Book book) {
     booksMap.put(book.getIsbn(), book);
 } 
+  public Book searchByIsbn(String isbn) {
+    return booksMap.get(isbn);
+}
 }
