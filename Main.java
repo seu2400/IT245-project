@@ -13,6 +13,12 @@ HashSearch hashSearch = new HashSearch();
 for (Book book : books) {
     hashSearch.addBook(book);
 }
+        String targetIsbn = "1003";
+
+Book hashResult = hashSearch.searchByIsbn(targetIsbn);
+
+System.out.println("HashMap Search Result:");
+System.out.println(hashResult);
     }
 
 }
